@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@100&family=Source+Serif+Pro:wght@300&display=swap" rel="stylesheet">
+    <!-- social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Global Poetry Contest</title>
+        <!-- icon link -->
+        <link rel = "icon" href = 
+        "images/TFP_icon.png" type = "image/x-icon">
+</head>
+<body>
+<!-- header -->
+    <header>
+        <section>
+            <div class="navbar-fixed">
+                <nav class="navbar navbar-extended">
+                    <div class="nav-wrapper">
+                        <div class="container">
+                            <a href="index.html" class="brand-logo center" id="logo-image">
+                                <img src="images/the foible pub logo (1).png" height="67">
+                            </a>
+                        </div>
+                        <form class="right">
+                            <div class="input-field">
+                                <input id="search" type="search" required>
+                                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                                <i class="material-icons">close</i>
+                            </div>
+                        </form>
+                        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    </div>
+                </nav>
+            </div>
+            <div class="nav-content">
+                <ul class="tabs right hide-on-med-and-down" id="nav-mobile">
+                    <li class="tab"><a target="_self" href="index.html"><b>Home</b></a></li>
+                    <li class="tab"><a target="_self" href="about.html"><b>About </b></a></li>
+                    <li class="tab"><a target="_self" class="active" href="globalpoetrycontest.html"><b>Global Poetry Contest</b></a></li>
+                    <li class="tab"><a target="_self" href="archive.html"><b>Archive</b></a></li>
+                    <li class="tab"><a target="_self"href="submit.html"><b>Submit</b></a></li>
+                </ul>
+            </div>
+        </section>
+
+<!-- side nav -->
+        <ul class="sidenav white-text" id="mobile-demo">
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                    </div>
+                    <a href="index.html"><img src="images/the foible pub logo (1).png" class="responsive-img center"></a>
+                </div>
+            </li>
+            <li>
+                <a href="index.html"><i class="material-icons">home</i>Home</a>
+            </li>
+            <li>
+                <a href="About.html"><i class="material-icons">info</i>About</a>
+            </li>
+            <li>
+                <a class="active" href="globalpoetrycontest.html"><i class="material-icons">grade</i>Global Poetry Contest</a>
+            </li>
+            <li>
+                <a href="archive.html"><i class="material-icons">folder</i>Archive</a>
+            </li>
+            <li>
+                <a href="submit.html"><i class="material-icons">mail</i>Submit</a>
+            </li>
+        </ul>
+    </header>
+
+
+    <main>
+        <!-- parallax 1 -->
+        <div class="parallax-container">
+            <div class="parallax"><img src="images/gpc parallax1.png"></div>
+        </div>
+
+        <!-- SUBMISSION form -->
+        <div id="modal1" class="modal sheet">
+            <div class="modal-content cyan lighten-5">
+                <div class="container">
+                    <div class="row">
+                        <form class=" form col s12">
+                            <h3>Submission Form</h3>
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input id="name/pseudonym" type="text" class="validate">
+                                    <label for="name/pseudonym">Name/Pseudonym</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input id="email" type="email" class="validate">
+                                    <label for="email">Email</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                <input id="website" type="text" class="validate">
+                                <label for="website">Website/Socials</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input id="title" type="text" class="validate">
+                                    <label for="title">Title/s</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input id="submissiondate" type="text" class="datepicker">
+                                    <label for="submissiondate">Date of Submission</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                    <label for="textarea1">Shortbio</label>
+                                </div>
+                            </div>
+                            <div class="file-field input-field">
+                                <div class="btn">
+                                    <i class="material-icons">file_upload</i>
+                                    <input type="file" multiple>
+                                </div>
+                                <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text" placeholder="Upload one or more files">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>    
+            </div>
+            <div class="modal-footer cyan lighten-4">
+                <!-- <a href="modal2" class="modal-trigger waves-effect waves-green btn">Submit</a> -->
+                <button data-target="modal2" class="btn modal-trigger waves-effect waves-green">Submit</button> 
+            </div>
+        </div>
+
+        
+    <!-- modal 2:confirmation -->
+        <div id="modal2" class="modal">
+            <div class="modal-content cyan lighten-5">
+                <h4 style="color:rgb(127, 179, 174)">Are you ready to submit your work?</h4>
+                <p> this action cannot be undone</p>
+            </div>
+            <div class="modal-footer cyan lighten-5">
+                <button data-target="modal1" onclick="M.toast({html: 'Your work has been submitted'})" class="btn modal-close waves-effect waves-green">YES</button> 
+                <button data-target="modal2" onclick="M.toast({html: 'Your work has not been submitted'})" class="btn red lighten-3 modal-close waves-effect waves-red">NO</button> 
+            </div>
+        </div>
+
+        <section>
+            <div class="container">
+                <hr>
+                <h3 class="section-title" style="color:rgb(127, 179, 174)">GLOBAL POETRY AWARDS</h3>
+                <div class="row">
+                <!-- first card -->
+                    <div class="col s12 off-set m4">
+                        <div class="card card1 hoverable">
+                            <div class="card-content">
+                                <h5>Our Poetry Contest</h5>
+                                <h4 style="color:rgb(56, 81, 78)">in a nutshell...</h4>
+                                <div class="text-content">
+                                    <p><b>Opens:</b> October 28, 2022</p>
+                                    <p><b>Closes:</b> December 1, 2022</p>
+                                    <p><b>Results:</b> Within 7 days of closing.</p>
+                                    <p><b>Max. Participants:</b> 150 entries</p>
+                                    <br>
+                                    <hr>
+                                    <h4 class="center">Prizes:</h4>
+                                    <p class="center"><b>1st Place:</b> ₱10,000</p>
+                                    <p class="center"><b>2nd Place:</b> ₱5,000</p>
+                                    <p class="center"><b>3rd Place:</b> ₱1,000</p>
+                                </div>
+                                <br>
+                                <div class="center-align">
+                                    <button data-target="modal1" class="btn modal-trigger waves-effect waves-light "><i class="material-icons left">email</i>Enter Here>></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- second card -->
+                    <div class="card1 col s12 off-set m8">
+                        <div class="card hoverable">
+                            <div class="card-content">
+                                <h4 style="color:rgb(56, 81, 78)"> <i class="small material-icons left-align">star</i>The Foible Pub Poetry Contest <i>2022</i><i class="small material-icons left-align">star</i></h4>
+                                <p>Enter our poetry contest for a chance to win cash prizes and gain worldwide recognition for your talent!</p>
+                                <div class="right-align">
+                                    <button data-target="modal1" class="btn modal-trigger waves-effect waves-light"><Modal><i class="material-icons left">email</i>Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- third card -->
+                    <div class="col s12 off-set m8">
+                        <div class="card card2 hoverable">
+                            <div class="card-content">
+                                <h4 style="color:rgb(127, 179, 174)">Guidelines:</h4>
+                                <ol>
+                                    <li>Signing up to Poetry.com is required to enter.</li>
+                                    <li>Work must be an original composition and previously unpublished.</li>
+                                    <li>Your poem should not exceed 75 lines in length including stanza breaks.</li>
+                                    <li>Poems may take any poetic form (see Poetic Forms) and cover any theme or subject as long as material is respectful and inoffensive.</li>
+                                    <li>There is no limit to the number of poems you may apply with, a new application form must be filled out for each new entry.</li>
+                                    <li>Poems must be in English.</li>
+                                    <li>We cap total entries at 150 poems per contest.</li>
+                                    <li>A non-refundable entry and review fee of 25 USD* is required to enter.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- first section -->
+        <section>
+            <div class="container">
+                <hr>
+                <div class="row">
+                    <div class="col s12 off-set m4">
+                        <div class="card card1 hoverable">
+                            <div class="card-content" style="color:rgb(56, 81, 78)"> 
+                                <h5>October 2022</h5>
+                                <h4>Poetry Contest</h4>
+                                <p>Enter ourPoetry contest for the chance to win cash prizes and gain recognition for your talent.</p>
+                                <hr>
+                                <h5  class="center"><b>Submissions due in...</b></h5>
+                                <h4 class="count center solid"><b>31</b></h4>
+                                <h5 class="center"><b>days</b></h5>    
+                                <div class="progress center">
+                                    <div class="determinate" style="width: 84%"></div>
+                                </div>
+                                <h7 class="center">126 entries submitted — 24 remaining</h7>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FAQs -->
+                    <div class="col s12 off-set m8">
+                        <ul class="collapsible popout left-align">
+                            <li class="card z-depth-0 transparent" style="color:rgb(127, 179, 174)"><h3><i class="material-icons small">priority_high</i>FAQs</h3></li>
+                            <li>
+                                <div class="collapsible-header white-text"><i class="material-icons white-text">info_outline</i>How does it work?</div>
+                                <div class="collapsible-body"><span>Every month, a new contest will begin. Submit an original poem or choose one of your existing poems from the site. Check out our entry criteria, then submit your entry before the deadline! The following month, we will announce the winners on our contest Summary Page. Additionally, all nominated poems will be displayed on our site and will feature a special badge, highlighting it is a contest nominee. Each winner's badge will display their position in the top three!</span></div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header white-text"><i class="material-icons white-text">info_outline</i>How do you decide who wins?</div>
+                                <div class="collapsible-body"><span>In this contest, YOU are the judges! Every nominee is eligible for one vote, each vote worth a single point. Once all the applications have been received or the submission period has been reached, you will be able to vote. You are not allowed to vote for yourself, and abstaining from voting will deduct a point from your poem. On top of that, the Poetry.com team will award five bonus points to their favorite poems. The voting period will last one week, after which the winners will be announced!.</span></div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header white-text"><i class="material-icons white-text">info_outline</i>Wait what?</div>
+                                <div class="collapsible-body"><span> YES! all our participants are judges too! Our poetry contests boast a clever twist! We thought long and hard about what we can offer the poetry community that is new, fresh and exciting. Traditional formats have a panel of judges, named or anonymous. Our vision is that poetry is like art - it can be viewed and interpreted in a myriad of ways and it all comes down to taste and opinion. We offer a Judgement Guide to outline the key aspects of a good poem and encourage you to bring your own knowledge and experience together with ours when voting for yourselves. We believe in our community and its power to create! Let the games begin!</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- second card -->
+                    <div class="col s12 off-set m8">
+                        <div class="card card3 hoverable">
+                            <div class="card-content">
+                                <h4 style="color:rgb(127, 179, 174)">Enter the competition!</h4>
+                                <h6>Submit your best poem to the contest for a chance to win cash prizes and gain recognition for your talent!</h6>
+                                <div class="right-align">
+                                    <button data-target="modal1" class="btn modal-trigger waves-effect waves-light"><Modal><i class="material-icons left">done</i>enter</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+
+            <br>
+            <!-- parallax 2 -->
+            <div class="parallax-container">
+                <div class="parallax"><img src="images/gpc parallax 2.png"></div>
+            </div> 
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="page-footer">
+        <div class="container">
+            <h5 class="footer-title center">THE FOIBLE PUB</h5>
+            <p class="center">&copy; 2022 by The Foible Pub</p>
+            <div class="row">
+                <div class="col l6 s12 m6">
+                    <h5 class="white-text">Join our Mailing List</h5>
+                    <!-- mailing list -->
+                    <div class="card-panel grey lighten-4 grey-text text-darken-4 z-depth-2">
+                        <form action="">
+                            <div class="input-field">
+                                <input type="text" id="email">
+                                <label for="email">Enter your e-mail</label>
+                            </div>
+                        </form>
+                    </div>
+                    <a class="waves-effect waves-light btn left">Join</a>
+                    <br>
+                </div>
+                <div class="col l6 s12 m6 right-align">
+                    <p class="left">Unauthorised use and/or duplication of this material and design without express and written permission from this site’s author and/or owner is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to the creator and The Foible Pub with appropriate and specific direction to the original content.</p>
+                    <h5>See us on:</h5>
+                    <a href="#" class="fa fa-facebook"></a>  
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>  
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+    
+    <script>
+        $(document).ready(function(){
+            // parallax
+            $('.parallax').parallax();
+            // side nav
+            $('.sidenav').sidenav({
+                    draggable: true,
+                    inDuration: 200,
+                    outDuration: 200,
+                });
+                // modal 
+            $('.modal').modal({
+                    preventScrolling: true,
+                });
+            $('#textarea1').val('');
+                M.textareaAutoResize($('#textarea1'));
+                // date-picker
+            $('.datepicker').datepicker();
+                // collapsible
+            $('.collapsible').collapsible();
+                // forms
+                // counter
+            $('.count').each(function(){
+                $(this).prop('counter',0).animate({
+                    Counter: $(this).text()
+                    
+                },{
+                    duration: 10000,
+                    easing: 'swing',
+                    step: function(now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+            });
+
+
+
+
+            });
+            
+    </script>
+    
+    
+    </body>
+    </html>
